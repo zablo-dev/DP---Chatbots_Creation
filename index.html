@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Chatbot – GBS Annual Meeting 2025</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e2f;
+            color: #f5f5f5;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        h2 {
+            color: #2aa4f2;
+            margin-bottom: 20px;
+        }
+
+        input[type=text], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: none;
+            background-color: #2e2e3e;
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        input[type=submit] {
+            background-color: #2aa4f2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type=submit]:hover {
+            background-color: #1984c5;
+        }
+
+        .answer {
+            background-color: #2e2e3e;
+            border-left: 5px solid #2aa4f2;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 4px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>FAQ Chatbot – GBS Annual Meeting 2025</h2>
+    <form method="post">
+        <label for="question">Enter your question:</label>
+        <input type="text" id="question" name="question" placeholder="E.g., When is the event happening?" autofocus>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if answer %}
+    <div class="answer">
+        <strong>Bot response:</strong><br>
+        {{ answer }}
+    </div>
+    {% endif %}
+</body>
+</html>
