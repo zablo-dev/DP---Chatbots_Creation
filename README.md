@@ -2,7 +2,7 @@
 
 Tento repozitář obsahuje implementace jednotlivých přístupů k vývoji a nasazení FAQ chatbotů, které byly analyzovány a porovnány v rámci diplomové práce s názvem:
 
-**„Porovnání přístupů k vývoji a implementaci chatbotů v konzultačním prostředí“**
+**„Porovnání přístupů k vývoji a implementaci chatbotů“**
 
 ---
 
